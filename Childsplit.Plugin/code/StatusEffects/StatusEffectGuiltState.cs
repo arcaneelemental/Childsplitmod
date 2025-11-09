@@ -1,5 +1,5 @@
 using System.Collections;
-using ShinyShoe.Logging;
+using ShinyShoe;
 
 namespace Childsplit.Plugin
 {
