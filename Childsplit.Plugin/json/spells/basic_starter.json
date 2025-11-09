@@ -16,7 +16,8 @@
       "targetless": false,
       "class": "@ClassBasic",
       "card_art": "@ChampionAStarterCardArt",
-      "effects": [ "@ChampionAStarterDealTwentyDamage" ],
+      "effects": [ "@ChampionAStarterDealTwentyDamage",
+    "@Applyguilt" ],
       "pools": [ "StarterCardsOnly" ],
       "lore_tooltips": [
         {
