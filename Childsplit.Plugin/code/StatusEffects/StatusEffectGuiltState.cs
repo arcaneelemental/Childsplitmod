@@ -12,7 +12,7 @@ namespace Childsplit.Plugin
 
         protected override IEnumerator OnTriggered(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
         {
-            inputTriggerParams.damage = 1;
+            outputTriggerParams.damage = 1;
             yield break;
         }
     }
