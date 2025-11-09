@@ -1,0 +1,19 @@
+using System.Collections;
+using ShinyShoe.Logging;
+
+namespace Childsplit.Plugin
+{
+    class StatusEffectOneDamagePyreState : StatusEffectState
+    {
+        public override bool TestTrigger(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
+        {
+            return inputTriggerParams.attacked != null && inputTriggerParams.attacked.IsPyreHeart() && inputTriggerParams.damage > 0;
+        }
+
+        protected override IEnumerator OnTriggered(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
+        {
+            inputTriggerParams.damage = 1;
+            yield break;
+        }
+    }
+}

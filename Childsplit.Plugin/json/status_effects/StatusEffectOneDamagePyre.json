@@ -1,0 +1,49 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "Guilt",
+      "class_name": "@StatusEffectOneDamagePyreState",
+      "names": {
+        "english": "Guilt"
+      },
+      "stackable_names": {
+        "english": "Guilt {0}"
+      },
+      "card_tooltips": {
+        "english": "When attacking the Pyre, cannot deal more than 1 damage. Decreases each time attacking the Pyre."
+      },
+      "character_tooltips": {
+        "english": "When attacking the Pyre, this unit cannot deal more than 1 damage. Decreases by 1 every time this unit attacks the Pyre."
+      },
+      "notifications": {
+        "english": "Guilt"
+      },
+      "replacement_texts": {
+        "english": "<b>Guilt</b>"
+      },
+      "trigger_stage": "on_post_attacking",
+      "remove_when_triggered": true,
+      "is_propagatable": false,
+      "display_category": "persistent",
+      "is_stackable": true,
+      "icon": "@Guilt"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Guilt",
+      "path": "textures/status_guilt.png"
+    }
+  ],
+  "atlas_icons": [
+    {
+      "id": "Guilt",
+      "path": "textures/status_guilt_tooltip.png"
+    },
+    {
+      "id": "CardTextGuilt",
+      "path": "textures/trigger_guilt.png"
+    }
+  ]
+}
