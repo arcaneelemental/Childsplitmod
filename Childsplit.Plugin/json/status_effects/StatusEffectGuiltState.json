@@ -2,8 +2,8 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "status_effects": [
     {
-      "id": "Guilt",
-      "class_name": "@StatusEffectOneDamagePyreState",
+      "id": "guilt",
+      "class_name": "@StatusEffectGuiltState",
       "names": {
         "english": "Guilt"
       },

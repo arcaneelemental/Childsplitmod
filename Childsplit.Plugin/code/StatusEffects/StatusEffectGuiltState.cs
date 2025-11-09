@@ -3,7 +3,7 @@ using ShinyShoe.Logging;
 
 namespace Childsplit.Plugin
 {
-    class StatusEffectOneDamagePyreState : StatusEffectState
+    class StatusEffectGuiltState : StatusEffectState
     {
         public override bool TestTrigger(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
         {
