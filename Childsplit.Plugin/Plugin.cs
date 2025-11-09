@@ -51,6 +51,8 @@ namespace Childsplit.Plugin
                         "json/enhancers/basic_enhancer.json",
                         // Artifacts
                         "json/relics/basic_artifact.json"
+                        // GuiltStatus
+                        "json/status_effects/StatusEffectGuiltState.json"
                     );
                 }
             );
