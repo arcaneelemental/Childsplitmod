@@ -22,7 +22,7 @@
       "replacement_texts": {
         "english": "<b>Guilt</b>"
       },
-      "trigger_stage": "on_post_attacking",
+      "trigger_stage": "on_pre_attacking",
       "remove_when_triggered": true,
       "is_propagatable": false,
       "display_category": "persistent",
@@ -33,17 +33,17 @@
   "sprites": [
     {
       "id": "Guilt",
-      "path": "textures/status_guilt.png"
+      "path": "textures/icons/status_guilt.png"
     }
   ],
   "atlas_icons": [
     {
       "id": "Guilt",
-      "path": "textures/status_guilt_tooltip.png"
+      "path": "textures/icons/status_guilt_tooltip.png"
     },
     {
       "id": "CardTextGuilt",
-      "path": "textures/trigger_guilt.png"
+      "path": "textures/icons/trigger_guilt.png"
     }
   ]
 }
