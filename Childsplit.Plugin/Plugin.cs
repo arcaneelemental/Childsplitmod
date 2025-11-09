@@ -50,7 +50,7 @@ namespace Childsplit.Plugin
                         // Shop Upgrades (Enhancer)
                         "json/enhancers/basic_enhancer.json",
                         // Artifacts
-                        "json/relics/basic_artifact.json"
+                        "json/relics/basic_artifact.json",
                         // GuiltStatus
                         "json/status_effects/StatusEffectGuiltState.json"
                     );
