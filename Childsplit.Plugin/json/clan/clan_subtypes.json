@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "subtypes": [
+    {
+      "id": "BasicSubtype",
+      "names": {
+        "english": "Basic",
+        "chinese": "示例"
+      }
+    },
+    {
+      "id": "TitanShard",
+      "names": {
+        "english": "TitanShard"
+      }
+    },
+    {
+      "id": "Judge",
+      "names": {
+        "english": "Judge"
+      }
+    }
+  ]
+}
