@@ -1,0 +1,44 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "status_effects": [
+    {
+      "id": "purity",
+      "class_name": "@StatusEffectPurityState",
+      "names": {
+        "english": "Purification"
+      },
+      "stackable_names": {
+        "english": "Purification {0}"
+      },
+      "card_tooltips": {
+        "english": "Used by certain abilities."
+      },
+      "character_tooltips": {
+        "english": "Used by certain abilities."
+      },
+      "notifications": {
+        "english": "Purified"
+      },
+      "replacement_texts": {
+        "english": "<b>Purification</b>"
+      },
+      "display_category": "negative",
+      "is_stackable": true,
+      "is_propagatable": true,
+      "exclude_monster_propagation": true,
+      "icon": "@Purity"
+    }
+  ],
+  "sprites": [
+    {
+      "id": "Purity",
+      "path": "textures/icons/status_purity.png"
+    }
+  ],
+  "atlas_icons": [
+    {
+      "id": "Purity",
+      "path": "textures/icons/status_purity_tooltip.png"
+    }
+  ]
+}
