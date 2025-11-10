@@ -16,7 +16,7 @@ namespace Childsplit.Plugin
 		    	return false;
 		    }
             outputTriggerParams.damage = 1;
-		    return outputTriggerParams.damage != inputTriggerParams.damage;
+		    return true;
         }
 
         protected override IEnumerator OnTriggered(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
