@@ -52,7 +52,7 @@ namespace Childsplit.Plugin
                         // Artifacts
                         "json/relics/basic_artifact.json",
                         // GuiltStatus
-                        "json/status_effects/StatusEffectPurityState.json"
+                        "json/status_effects/StatusEffectGuiltState.json"
                     );
                 }
             );

@@ -5,7 +5,7 @@ using ShinyShoe;
 
 namespace Childsplit.Plugin
 {
-    class StatusEffectPurityState : StatusEffectState
+    class StatusEffectGuiltState : StatusEffectState
     {
         public override bool TestTrigger(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
         {
