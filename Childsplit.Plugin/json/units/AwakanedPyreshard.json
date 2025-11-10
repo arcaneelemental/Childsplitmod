@@ -65,7 +65,6 @@
     {
       "id": "PyreShardEmber",
       "name": "CardEffectGainEnergy",
-      "target_mode": "room",
       "param_int": 1
     }
   ],
