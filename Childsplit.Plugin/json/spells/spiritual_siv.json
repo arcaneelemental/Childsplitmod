@@ -15,7 +15,7 @@
       "targets_room": true,
       "targetless": false,
       "class": "@ClassBasic",
-      "card_art": "@BasicCommonSpellCardArt",
+      "card_art": "@SpiritualSivSpellCardArt",
       "effects": [
         "@SpiritSivApplySoul",
         "@SpiritSivApplyPurity"
