@@ -42,8 +42,8 @@
       "target_team": "both",
       "param_status_effects": [
           {
-              "status": "@guilt",
-              "count": 1
+              "status": "@purity",
+              "count": 2
           }
        ]
     }
