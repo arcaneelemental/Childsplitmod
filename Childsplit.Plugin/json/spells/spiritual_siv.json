@@ -56,18 +56,18 @@
   ],
   "game_objects": [
     {
-      "id": "bBasicCommonSpellCardArt",
+      "id": "SpiritualSivSpellCardArt",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@bBasicCommonSpellCardSprite"
+          "sprite": "@SpiritualSivSpellCardSprite"
         }
       }
     }
   ],
   "sprites": [
     {
-      "id": "bBasicCommonSpellCardSprite",
+      "id": "SpiritualSivSpellCardSprite",
       "path": "textures/card_art/BasicCommonSpell.png"
     }
   ]
