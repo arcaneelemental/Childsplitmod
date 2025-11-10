@@ -30,8 +30,8 @@
       },
       "character_art": "@BasicDraftUnitCharacterArt",
       "size": 1,
-      "health": 0,
-      "attack_damage": 1,
+      "health": 1,
+      "attack_damage": 0,
       "subtypes": [ "@TitanShard" ],
       "triggers": [ "@AwakanedPyreShardResonance" ],
       "starting_status_effects": [
