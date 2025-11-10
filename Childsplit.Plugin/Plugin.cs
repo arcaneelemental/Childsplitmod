@@ -38,6 +38,7 @@ namespace Childsplit.Plugin
                         // Starter (required).
                         "json/spells/basic_starter.json",
                         "json/spells/basic_common.json",
+                        "json/spells/spiritual_siv.json",
                         // Units
                         "json/units/basic_ability_unit.json",
                         "json/units/basic_banner_unit.json",

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "SpiritualSiv",
+      "cost": 1,
+      "card_type": "spell",
+      "names": {
+        "english": "Spiritual Siv"
+      },
+      "descriptions": {
+        "english": "Apply [captured_soul] [effect0.status0.power] and [Childsplit.Plugin_purity] [effect1.status0.power] to enemy units."
+      },
+      "rarity": "common",
+      "targets_room": true,
+      "targetless": false,
+      "class": "@ClassBasic",
+      "card_art": "@BasicCommonSpellCardArt",
+      "effects": [
+        "@SpiritSivApplySoul",
+        "@SpiritSivApplyPurity"
+      ],
+      "pools": ["MegaPool"],
+      "lore_tooltips": [
+        {
+          "english": "Example common card."
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpiritSivApplySoul",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_status_effects": [
+        {
+          "status": "captured_soul",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "SpiritSivApplyPurity",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@purity",
+          "count": 7
+        }
+      ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "BasicCommonSpellCardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@BasicCommonSpellCardSprite"
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BasicCommonSpellCardSprite",
+      "path": "textures/card_art/BasicCommonSpell.png"
+    }
+  ]
+}
