@@ -25,6 +25,7 @@
       "trigger_stage": "on_pre_attacking",
       "remove_when_triggered": false,
       "is_propagatable": true,
+      "exclude_monster_propagation": true,
       "display_category": "negative",
       "is_stackable": true,
       "icon": "@Guilt"
