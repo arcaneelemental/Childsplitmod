@@ -46,13 +46,14 @@
     {
       "id": "AwakanedPyreShardResonance",
       "descriptions": {
-        "english": "Gain [effect1.power][ember]."
+        "english": "Gain [effect1.power] [ember] this turn and [effect2.power] [ember] next turn."
       },
       "trigger": {
                 "id": "@Resonance",
                 "mod_reference": "Conductor"
             },
-      "effects": [ "@PyreShardEmber" ]
+      "effects": [ "@PyreShardEmber",
+    "@PyreShardEmber1" ]
     }
   ],
   "effects": [
@@ -65,6 +66,11 @@
     {
       "id": "PyreShardEmber",
       "name": "CardEffectGainEnergy",
+      "param_int": 1
+    },
+    {
+      "id": "PyreShardEmber1",
+      "name": "CardEffectGainEnergyNextTurn",
       "param_int": 1
     }
   ],
