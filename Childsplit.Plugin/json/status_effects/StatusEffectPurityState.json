@@ -23,7 +23,7 @@
         "english": "<b>Purity</b>"
       },
       "trigger_stage": "on_pre_attacking",
-      "remove_when_triggered": false,
+      "remove_when_triggered": true,
       "is_propagatable": true,
       "exclude_monster_propagation": true,
       "display_category": "negative",
