@@ -9,7 +9,7 @@
         "english": "Starter Card"
       },
       "descriptions": {
-        "english": "Deal [effect0.power] damage to an enemy unit. Apply [Childsplit.Plugin_guilt] [effect1.status0.power]"
+        "english": "Deal [effect0.power] damage to an enemy unit. Apply [Childsplit.Plugin_purity] [effect1.status0.power]"
       },
       "rarity": "common",
       "targets_room": true,
@@ -33,7 +33,7 @@
       "name": "CardEffectDamage",
       "target_mode": "drop_target_character",
       "target_team": "heroes",
-      "param_int": 20
+      "param_int": 1
     },        
     {
       "id": "Applyguilt",
@@ -42,7 +42,7 @@
       "target_team": "both",
       "param_status_effects": [
           {
-              "status": "@guilt",
+              "status": "@purity",
               "count": 2
           }
        ]
