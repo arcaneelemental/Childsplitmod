@@ -9,7 +9,14 @@ namespace Childsplit.Plugin
     {
         public override bool TestTrigger(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
         {
-            return inputTriggerParams.attacked != null && inputTriggerParams.attacked.IsPyreHeart() && inputTriggerParams.damage > 0;
+            CharacterState attacker = inputTriggerParams.attacker;
+		    CharacterState attacked = inputTriggerParams.attacked;
+		    if (attacked == null || !inputTriggerParams.attacked.IsPyreHeart() || inputTriggerParams.damage == 0)
+		    {
+		    	return false;
+		    }
+            outputTriggerParams.damage = 1;
+		    return outputTriggerParams.damage != inputTriggerParams.damage;
         }
 
         protected override IEnumerator OnTriggered(InputTriggerParams inputTriggerParams, OutputTriggerParams outputTriggerParams, ICoreGameManagers coreGameManagers)
