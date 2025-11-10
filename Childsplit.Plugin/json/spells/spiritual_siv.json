@@ -56,18 +56,18 @@
   ],
   "game_objects": [
     {
-      "id": "aBasicCommonSpellCardArt",
+      "id": "bBasicCommonSpellCardArt",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@aBasicCommonSpellCardSprite"
+          "sprite": "@bBasicCommonSpellCardSprite"
         }
       }
     }
   ],
   "sprites": [
     {
-      "id": "aBasicCommonSpellCardSprite",
+      "id": "bBasicCommonSpellCardSprite",
       "path": "textures/card_art/BasicCommonSpell.png"
     }
   ]
