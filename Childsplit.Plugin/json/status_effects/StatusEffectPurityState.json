@@ -2,30 +2,30 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "status_effects": [
     {
-      "id": "guilt",
-      "class_name": "@StatusEffectGuiltState",
+      "id": "purity",
+      "class_name": "@StatusEffectPurityState",
       "names": {
-        "english": "Guilt"
+        "english": "Purity"
       },
       "stackable_names": {
-        "english": "Guilt {0}"
+        "english": "Purity {0}"
       },
       "card_tooltips": {
-        "english": "When attacking the Pyre, cannot deal more than 1 damage. Decreases each time attacking the Pyre."
+        "english": "Used to power various abilities."
       },
       "character_tooltips": {
-        "english": "When attacking the Pyre, this unit cannot deal more than 1 damage. Decreases by 1 every time this unit attacks the Pyre."
+        "english": "Used to power various abilities."
       },
       "notifications": {
-        "english": "Guilt"
+        "english": "Purified"
       },
       "replacement_texts": {
-        "english": "<b>Guilt</b>"
+        "english": "<b>Purity</b>"
       },
       "trigger_stage": "on_pre_attacking",
-      "remove_when_triggered": true,
-      "is_propagatable": false,
-      "display_category": "persistent",
+      "remove_when_triggered": false,
+      "is_propagatable": true,
+      "display_category": "negative",
       "is_stackable": true,
       "icon": "@Guilt"
     }
