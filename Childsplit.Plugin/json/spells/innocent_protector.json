@@ -2,24 +2,25 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "cards": [
     {
-      "id": "SpiritualSiv",
-      "cost": 1,
+      "id": "InnocentProtector",
+      "cost": 2,
       "card_type": "spell",
       "names": {
-        "english": "Spiritual Siv"
+        "english": "Innocent Protector"
       },
       "descriptions": {
-        "english": "Apply [soul] [effect0.status0.power] to friendly units and [Childsplit.Plugin_purity] [effect1.status0.power] to enemy units."
+        "english": "Apply [damage shield] [effect0.status0.power] and [mute] [effect1.status0.power]."
       },
       "rarity": "common",
       "targets_room": true,
-      "targetless": true,
+      "targetless": false,
       "class": "@ClassBasic",
-      "card_art": "@SpiritualSivSpellCardArt",
+      "card_art": "@InnocentProtectorSpellCardArt",
       "effects": [
-        "@SpiritSivApplySoul",
-        "@SpiritSivApplyPurity"
+        "@InnocentProtectorApplySoul",
+        "@InnocentProtectorApplyShield"
       ],
+      "traits": ["@Consume"],
       "pools": ["MegaPool"],
       "lore_tooltips": [
         {
@@ -30,44 +31,44 @@
   ],
   "effects": [
     {
-      "id": "SpiritSivApplySoul",
+      "id": "InnocentProtectorApplySoul",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
-      "target_team": "monsters",
+      "target_mode": "drop_target_character",
+      "target_team": "both",
       "param_status_effects": [
         {
           "status": "captured_soul",
-          "count": 5
+          "count": 8
         }
       ]
     },
     {
-      "id": "SpiritSivApplyPurity",
+      "id": "InnocentProtectorApplyShield",
       "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
-      "target_team": "heroes",
+      "target_mode": "last_targeted_characters",
+      "target_team": "both",
       "param_status_effects": [
         {
-          "status": "@purity",
-          "count": 7
+          "status": "damage shield",
+          "count": 1
         }
       ]
     }
   ],
   "game_objects": [
     {
-      "id": "SpiritualSivSpellCardArt",
+      "id": "InnocentProtectorSpellCardArt",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@SpiritualSivSpellCardSprite"
+          "sprite": "@InnocentProtectorSpellCardSprite"
         }
       }
     }
   ],
   "sprites": [
     {
-      "id": "SpiritualSivSpellCardSprite",
+      "id": "InnocentProtectorSpellCardSprite",
       "path": "textures/card_art/BasicCommonSpell.png"
     }
   ]
