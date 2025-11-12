@@ -12,7 +12,7 @@
         "english": "Apply [damage shield] [effect0.status0.power] and [mute] [effect1.status0.power]."
       },
       "rarity": "common",
-      "targets_room": true,
+      "targets_room": false,
       "targetless": false,
       "class": "@ClassBasic",
       "card_art": "@InnocentProtectorSpellCardArt",
