@@ -1,0 +1,74 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "TitanicProsecution",
+      "cost": 2,
+      "card_type": "spell",
+      "names": {
+        "english": "Titanic Prosecution"
+      },
+      "descriptions": {
+        "english": "Apply [Childsplit.Plugin_purity] [effect0.status0.power] to an enemy unit. Double [Childsplit.Plugin_purity] on all enemies."
+      },
+      "rarity": "uncommon",
+      "targets_room": true,
+      "targetless": false,
+      "class": "@ClassBasic",
+      "card_art": "@TitanicProsecutionCardArt",
+      "effects": [
+        "@TitanicProsecutionApplyPurity",
+        "@TitanicProsecutionDoublePurity"
+      ],
+      "pools": ["MegaPool"],
+      "lore_tooltips": [
+        {
+          "english": "Example common card."
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "TitanicProsecutionApplyPurity",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@purity",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "id": "TitanicProsecutionDoublePurity",
+      "name": "CardEffectMultiplyStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@purity",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "TitanicProsecutionCardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@TitanicProsecutionCardSprite"
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TitanicProsecutionCardSprite",
+      "path": "textures/card_art/BasicCommonSpell.png"
+    }
+  ]
+}
