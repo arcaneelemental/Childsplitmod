@@ -9,7 +9,7 @@
         "english": "Empathic Titan"
       },
       "descriptions": {
-        "english": "Apply [Childsplit.Plugin_purity] [effect0.status0.power], [Childsplit.Plugin_guilt] [effect1.status0.power] and [pyre bound] to an enemy unit."
+        "english": "Apply [Childsplit.Plugin_purity] [effect0.status0.power], [Childsplit.Plugin_guilt] [effect1.status0.power] and [pyrebound] to an enemy unit."
       },
       "rarity": "uncommon",
       "targets_room": true,
