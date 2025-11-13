@@ -1,0 +1,88 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "EmpathicTitan",
+      "cost": 2,
+      "card_type": "spell",
+      "names": {
+        "english": "Empathic Titan"
+      },
+      "descriptions": {
+        "english": "Apply [Childsplit.Plugin_purity] [effect0.status0.power], [Childsplit.Plugin_guilt] [effect1.status0.power] and [pyre bound] to an enemy unit."
+      },
+      "rarity": "uncommon",
+      "targets_room": true,
+      "targetless": false,
+      "class": "@ClassBasic",
+      "card_art": "@EmpathicTitanCardArt",
+      "effects": [
+        "@EmpathicTitanApplyPurity",
+        "@EmpathicTitanApplyGuilt",
+        "@EmpathicTitanApplyPyreBound"
+      ],
+      "traits": ["@Consume"],
+      "pools": ["MegaPool"],
+      "lore_tooltips": [
+        {
+          "english": "Example common card."
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EmpathicTitanApplyPurity",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@purity",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "EmpathicTitanApplyGuilt",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@guilt",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "EmpathicTitanApplyPyreBound",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pyrebound",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "EmpathicTitanCardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@EmpathicTitanCardSprite"
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "EmpathicTitanCardSprite",
+      "path": "textures/card_art/BasicCommonSpell.png"
+    }
+  ]
+}

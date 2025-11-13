@@ -43,6 +43,7 @@ namespace Childsplit.Plugin
                         "json/spells/peaceful_blessing.json",
                         "json/spells/titanic_prosecution.json",
                         "json/spells/bottled_purelight.json",
+                        "json/spells/empathic_titan.json",
                         // Units
                         "json/units/basic_ability_unit.json",
                         "json/units/basic_banner_unit.json",
