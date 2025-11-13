@@ -12,7 +12,7 @@
         "english": "Apply [soul] [effect0.status0.power] and [damage shield] [effect1.status0.power]."
       },
       "rarity": "common",
-      "targets_room": false,
+      "targets_room": true,
       "targetless": false,
       "class": "@ClassBasic",
       "card_art": "@InnocentProtectorCardArt",
