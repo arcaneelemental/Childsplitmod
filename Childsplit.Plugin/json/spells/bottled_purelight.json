@@ -2,23 +2,23 @@
   "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
   "cards": [
     {
-      "id": "InnocentProtector",
-      "cost": 2,
+      "id": "BottledPurelight",
+      "cost": 0,
       "card_type": "spell",
       "names": {
         "english": "Innocent Protector"
       },
       "descriptions": {
-        "english": "Apply [soul] [effect0.status0.power] and [damage shield] [effect1.status0.power]."
+        "english": "Apply [soul] [effect0.status0.power] and [valor] [effect1.status0.power]."
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "targets_room": false,
       "targetless": false,
       "class": "@ClassBasic",
-      "card_art": "@InnocentProtectorCardArt",
+      "card_art": "@BottledPurelightCardArt",
       "effects": [
-        "@InnocentProtectorApplySoul",
-        "@InnocentProtectorApplyShield"
+        "@BottledPurelightApplySoul",
+        "@BottledPurelightApplyValor"
       ],
       "traits": ["@Consume"],
       "pools": ["MegaPool"],
@@ -34,41 +34,41 @@
       "id": "InnocentProtectorApplySoul",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "drop_target_character",
-      "target_team": "both",
+      "target_team": "monsters",
       "param_status_effects": [
         {
           "status": "captured_soul",
-          "count": 8
+          "count": 7
         }
       ]
     },
     {
-      "id": "InnocentProtectorApplyShield",
+      "id": "BottledPurelightApplyValor",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "last_targeted_characters",
-      "target_team": "both",
+      "target_team": "monsters",
       "param_status_effects": [
         {
-          "status": "damage shield",
-          "count": 1
+          "status": "valor",
+          "count": 3
         }
       ]
     }
   ],
   "game_objects": [
     {
-      "id": "InnocentProtectorCardArt",
+      "id": "BottledPurelightCardArt",
       "type": "card_art",
       "extensions": {
         "card_art": {
-          "sprite": "@InnocentProtectorCardSprite"
+          "sprite": "@BottledPurelightCardSprite"
         }
       }
     }
   ],
   "sprites": [
     {
-      "id": "InnocentProtectorCardSprite",
+      "id": "BottledPurelightCardSprite",
       "path": "textures/card_art/BasicCommonSpell.png"
     }
   ]
