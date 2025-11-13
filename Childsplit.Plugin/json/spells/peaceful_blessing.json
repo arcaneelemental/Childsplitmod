@@ -1,0 +1,87 @@
+{
+  "$schema": "https://github.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/releases/latest/download/schema.json",
+  "cards": [
+    {
+      "id": "PeacefulBlessing",
+      "cost": 1,
+      "card_type": "spell",
+      "names": {
+        "english": "Peaceful Blessing"
+      },
+      "descriptions": {
+        "english": "Apply [Childsplit.Plugin_purity] [effect0.status0.power], [sap] [effect1.status0.power] and [Childsplit.Plugin_guilt] [effect2.status0.power] to an enemy unit."
+      },
+      "rarity": "common",
+      "targets_room": true,
+      "targetless": false,
+      "class": "@ClassBasic",
+      "card_art": "@PeacefulBlessingCardArt",
+      "effects": [
+        "@PeacefulBlessingApplyPurity",
+        "@PeacefulBlessingApplySap",
+        "@PeacefulBlessingApplyGuilt"
+      ],
+      "pools": ["MegaPool"],
+      "lore_tooltips": [
+        {
+          "english": "Example common card."
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "PeacefulBlessingApplyPurity",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "drop_target_character",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@purity",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "PeacefulBlessingApplySap",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "PeacefulBlessingApplyGuilt",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "last_targeted_characters",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "@guilt",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "game_objects": [
+    {
+      "id": "PeacefulBlessingCardArt",
+      "type": "card_art",
+      "extensions": {
+        "card_art": {
+          "sprite": "@PeacefulBlessingCardSprite"
+        }
+      }
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PeacefulBlessingCardSprite",
+      "path": "textures/card_art/BasicCommonSpell.png"
+    }
+  ]
+}
