@@ -24,7 +24,7 @@
       "pools": ["MegaPool"],
       "lore_tooltips": [
         {
-          "english": "Example common card."
+          "english": "When Ophan cleanses the souls of those lost to the titans, a remenant of their will remains as a bright dense gas. We managed to bottle some of it, and discovered it manages to protect against titan corruption. I am concerned about if any will is infused when the gas is consumed, but at least for now, whatever will is infused is on our side."
         }
       ]
     }
